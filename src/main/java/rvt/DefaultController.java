@@ -23,4 +23,27 @@ public class DefaultController {
         modelAndView.addObject("date", new Date().toString());
         return modelAndView;
     }
+
+    @GetMapping(value = "/about")
+    ModelAndView about() {
+        ModelAndView modelAndView = new ModelAndView("about");
+        
+        return modelAndView;
+    }
+
+    @GetMapping(value = "/hello")
+    ModelAndView hello() {
+        ModelAndView modelAndView = new ModelAndView("hello");
+        
+        return modelAndView;
+    }
+
+    @GetMapping(value = "/contact")
+    ModelAndView contact() {
+        ModelAndView modelAndView = new ModelAndView("contact");
+        
+        return modelAndView;
+    }
+
+
 }
