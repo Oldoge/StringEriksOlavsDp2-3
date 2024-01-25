@@ -2,6 +2,7 @@ package rvt;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
@@ -45,5 +46,17 @@ public class DefaultController {
         return modelAndView;
     }
 
+    
+
+
+            
+    @GetMapping(value = "/test")
+            ModelAndView testAction() {
+                ModelAndView modelAndView = new ModelAndView("test");
+                
+                
+                
+                return modelAndView;
+            }
 
 }
